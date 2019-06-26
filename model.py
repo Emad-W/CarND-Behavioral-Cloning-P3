@@ -83,6 +83,7 @@ model.add(Conv2D(36,(5,5), strides = (2,2), activation = "relu"))
 model.add(Conv2D(48,(5,5), strides = (2,2), activation = "relu"))
 model.add(Conv2D(64,(3,3), activation = "relu"))
 model.add(Conv2D(64,(3,3), activation = "relu"))
+model.add(Dropout(0.5))
 model.add(Flatten())   
 model.add(Dense(100))
 model.add(Dense(50))
@@ -103,7 +104,7 @@ history_object = model.fit_generator(train_generator,
             steps_per_epoch=math.ceil(len(train_samples)/batch_size), 
             validation_data=validation_generator, 
             validation_steps=math.ceil(len(validation_samples)/batch_size), 
-            epochs=5, verbose=1)
+            epochs=8, verbose=1)
 
 ### print the keys contained in the history object
 print(history_object.history.keys())
@@ -116,9 +117,9 @@ plt.ylabel('mean squared error loss')
 plt.xlabel('epoch')
 plt.legend(['training set', 'validation set'], loc='upper right')
 plt.show()
+plt.savefig('History_object-4.png')
 
-
-model.save('model.h5')
+model.save('model-4.h5')
 exit()
 
 
