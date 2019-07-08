@@ -50,7 +50,7 @@ def generator(samples, batch_size=32):
                 images.append(img_right)
                 angles.append(steering_right)
 
-            # trim image to only see section with road
+            # Shuffle data set afterwards
             X_train = np.array(images)
             y_train = np.array(angles)
             yield shuffle(X_train, y_train)
@@ -75,7 +75,7 @@ from keras.layers.pooling import MaxPooling2D
 model = Sequential()
 
 model.add(Lambda(lambda x: x /255.0 - 0.5, input_shape = (160,320,3)))
-
+# Trim image to only see section with road
 model.add(Cropping2D(cropping=((60,20),(0,0))))
 
 model.add(Conv2D(24,(5,5), strides = (2,2), activation = "relu"))
