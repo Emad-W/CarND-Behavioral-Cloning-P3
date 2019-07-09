@@ -22,9 +22,9 @@ The steps of this project were as following:
 [//]: # (Image References)
 
 [image1]: ./Data/NvidiaArchitecture.png "Model Visualization"
-[image2]: ./Data/capture1.jpg "Sample output Image"
+[image2]: ./Data/Capture1.jpg "Sample output Image"
 [image3]: ./Data/Errorloss.png "mean square error"
-[image4]: ./Data/capture2.jpg "Sharp turn Image"
+[image4]: ./Data/Capture2.jpg "Sharp turn Image"
 
 
 ---
