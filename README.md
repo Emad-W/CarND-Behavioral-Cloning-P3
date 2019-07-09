@@ -96,27 +96,18 @@ My first step was to use the model with only center images without considering c
 Then I Included some specefic scenarios for car recovery from tough turns and some corner cases, Also the data from the 2 side cameras was included with steering angle correction factor to introduce more stability and robustness.
 Here are some sample of the acquired dataset:
 
+| Left Camera | Center Camera | Right Camera |
+|:-------------------:|:----------------:|:---------------------:|
+| <img src="./Data/left_2019_06_26_10_26_35_535.jpg" alt="drawing" style="width:100%"/>  | <img src="./Data/center_2019_06_26_10_26_35_535.jpg" alt="drawing" style="width:100%"/>     | <img src="./Data/right_2019_06_26_10_26_35_535.jpg" alt="drawing" style="width:100%"/>
 
-
-<p align="center" float="left">
-<img src="./Data/left_2019_06_26_10_26_35_535.jpg" alt="drawing" style="width:25%"/>
-
-<img src="./Data/center_2019_06_26_10_26_35_535.jpg" alt="drawing" style="width:25%"/>
-
-<img src="./Data/right_2019_06_26_10_26_35_535.jpg" alt="drawing" style="width:25%"/>
-</p>
 
 With steering angle calculated to be -0.004291845
 
 Also here is one of many sample added to correct the situation when the car approaches near the edge:
 
-<p align="center" float="left">
-<img src="./Data/left_2019_06_26_10_34_37_022.jpg" alt="drawing" style="width:25%"/>
-
-<img src="./Data/center_2019_06_26_10_34_37_022.jpg" alt="drawing" style="width:25%"/>
-
-<img src="./Data/right_2019_06_26_10_34_37_022.jpg" alt="drawing" style="width:25%"/>
-</p>
+| Left Camera | Center Camera | Right Camera |
+|:-------------------:|:----------------:|:---------------------:|
+| <img src="./Data/left_2019_06_26_10_34_37_022.jpg" alt="drawing" style="width:100%"/>  | <img src="./Data/center_2019_06_26_10_34_37_022.jpg" alt="drawing" style="width:100%"/>  | <img src="./Data/right_2019_06_26_10_34_37_022.jpg" alt="drawing" style="width:100%"/>  
 
 With steering angle calculated to be -0.03862661
 
