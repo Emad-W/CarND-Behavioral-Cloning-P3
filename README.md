@@ -22,9 +22,9 @@ The steps of this project were as following:
 [//]: # (Image References)
 
 [image1]: ./Data/NvidiaArchitecture.png "Model Visualization"
-[image2]: ./Data/capture1.png "Sample output Image"
+[image2]: ./Data/capture1.jpg "Sample output Image"
 [image3]: ./Data/Errorloss.png "mean square error"
-[image4]: ./Data/capture2.png "Sharp turn Image"
+[image4]: ./Data/capture2.jpg "Sharp turn Image"
 
 
 ---
@@ -117,7 +117,9 @@ The final step was to run the simulator to see how well the car was driving arou
 ![alt text][image2]
 
 Also when taking a sharp Edge the car stayed in the middle of the road as shown
+
 ![alt text][image4]
+
 Also our calculated Mean square error 0.008 shows very good performance for our model afterwards,
 
 ![alt text][image3]
